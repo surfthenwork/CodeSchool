@@ -24,3 +24,32 @@ $("#somediv li:even");
 
 # where :first, :last, :odd, :even are filters
 # the index for list items always starts at 0
+
+# Traversing
+$("#somediv li");
+$("#somediv").find("li");
+
+$("#somediv li:last");
+$("#somediv li").last();
+
+# Walking the dog (method chaining) using traversing
+$("#somediv li").first().next();
+
+# Traverse up the DOM
+$("li").first().parent();
+
+
+# Traverse down the DOM
+$("#somediv").children("li");
+# This fetches the first generation children
+
+
+
+
+
+
+
+
+
+
+
