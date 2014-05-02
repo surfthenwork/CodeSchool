@@ -38,6 +38,9 @@ $("#somediv li").first().next();
 # Traverse up the DOM
 $("li").first().parent();
 
+$(".somediv").parent("li");
+# This will fetch the li of any element using the class of .somedive
+
 
 # Traverse down the DOM
 $("#somediv").children("li");
