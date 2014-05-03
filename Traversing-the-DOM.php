@@ -46,13 +46,5 @@ $(".somediv").parent("li");
 $("#somediv").children("li");
 # This fetches the first generation children
 
-
-
-
-
-
-
-
-
-
-
+$("#somediv").find("> li");
+# where the > grabs only the li elements that are direct descendants (child selector) of the #somediv ul
