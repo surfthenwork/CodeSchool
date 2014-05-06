@@ -1,6 +1,6 @@
 # Appending to the DOM
 
-$(document).ready(fucntion(){
+$(document).ready(function(){
 // create a php node with the price
 });
 
@@ -27,3 +27,21 @@ var price = $('<p>Price goes here</p>');
 price.appendTo($('.somediv'));
 $('.somebutton').remove();
 });
+
+# Acting on Interaction
+
+$(document).ready(function() {
+// this function runs when the DOM is ready
+});
+
+$(document).ready(function() {
+$('.button').on('click', function() {
+var price = $('<p>Price goes here</p>');
+price.appendTo($('.somediv'));
+$('.somebutton').remove();
+});
+});
+
+
+
+
