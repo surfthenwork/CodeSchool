@@ -8,6 +8,7 @@ $(document).ready(fucntion(){
 var price = $('<p>Price goes here</p>');
 });
 
+
 #Filters
 # .append(<element>) .prepend(<element>) .after(<element>) .before(<element>)
 
@@ -17,16 +18,19 @@ $('.somediv').append(price);
 $('.somebutton').remove();
 });
 
+
 #.prepend adds the node to the top (first child) of .somediv
 #.append adds the node to the bottom (last child) of .somediv
 
 #.appendTo .prependTo .insertAfter .insertBefore
+
 
 $(document).ready(fucntion(){
 var price = $('<p>Price goes here</p>');
 price.appendTo($('.somediv'));
 $('.somebutton').remove();
 });
+
 
 # Acting on Interaction
 
@@ -43,5 +47,14 @@ $('.somebutton').remove();
 });
 
 
+# Refactor using Traversing
+
+$(document).ready(function() {
+$('.button').on('click', function() {
+var price = $('<p>Price goes here</p>');
+$(this).closest('.somediv').append(price);
+$(this).remove();
+});
+});
 
 
