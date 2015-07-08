@@ -1,7 +1,7 @@
 # Searching the DOM
 
 $("#somediv li");
-# where the Parent is "somedive" and the Descendant is the li
+# where the Parent is "somediv" and the Descendant is the li
 
 $("#somediv > li");
 # where the > grabs only the li elements that are direct descendants (child selector) of the #somediv ul
